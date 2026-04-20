@@ -77,7 +77,7 @@ and families the conversation they deserve.
 
 ## 👥 Team
 
-**Event:** MIMIC-IV Datathon 2026 · Hosted at Mayo Clinic · April 2026
+**Event:**  Datathon 2026 · Hosted at Mayo Clinic Jacksonville FLorida· April 2026
 
 **Mentors:**
 Ahram Han (MIT Visiting Researcher) ·
