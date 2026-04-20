@@ -1,9 +1,10 @@
 # Silent De-Escalation in the ICU
-### MIMIC-IV Datathon 2026 — Team Research Project · Hosted at Mayo Clinic
+### Mayo Clinic Datathon Jacksonville, FL · April 2026 — Team Research Project
 
 > **"The chart said rescue. The care had already quietly shifted."**
 
 [![Data](https://img.shields.io/badge/Data-MIMIC--IV_v3.1-0a3f6e?style=flat-square)](https://physionet.org/content/mimiciv/)
+[![eICU](https://img.shields.io/badge/Data-eICU--CRD-0a6e3f?style=flat-square)](https://physionet.org/content/eicu-crd/)
 [![Model](https://img.shields.io/badge/Model-XGBoost-e07b39?style=flat-square)](https://xgboost.readthedocs.io/)
 [![Engine](https://img.shields.io/badge/Engine-DuckDB-ffd700?style=flat-square)](https://duckdb.org)
 [![Cohort](https://img.shields.io/badge/Cohort-BigQuery-4285f4?style=flat-square)](https://cloud.google.com/bigquery)
@@ -13,9 +14,9 @@
 
 ## 🔬 Research Question
 
-In the ICU, care teams sometimes quietly shift a patient toward comfort care —
-ordering fewer labs, writing shorter notes, calling fewer specialists —
-**well before the chart reflects any change.**
+In the ICU, care teams sometimes quietly shift a patient toward
+comfort care — ordering fewer labs, writing shorter notes, calling
+fewer specialists — **well before the chart reflects any change.**
 
 We asked: **Is that 48-hour behavioral gap measurable from data alone?**
 And if so — who does it happen to, and what are their outcomes?
@@ -42,8 +43,8 @@ And if so — who does it happen to, and what are their outcomes?
 Four clinical proxies — lab velocity, diagnostic diversity,
 clinical engagement, specialist integration — computed per 24-hour
 window and residualized against severity (SOFA, ventilation,
-vasopressors) using OLS regression. Captures team intent, not
-just patient improvement.
+vasopressors) using OLS regression. Captures team intent,
+not just patient improvement.
 
 **2 — Transition Vector**
 Built from 1,898 documented DNR/CMO transitions.
@@ -75,9 +76,23 @@ and families the conversation they deserve.
 
 ---
 
-## 👥 Team
+## 👤 My Contribution (Krishna K. Joshi)
 
-**Event:**  Datathon 2026 · Hosted at Mayo Clinic Jacksonville FLorida· April 2026
+- Contributed to clinical problem framing and target
+  variable definition
+- Participated in cohort analysis and MIMIC-IV data
+  interpretation across 94,458 ICU stays
+- Contributed to discussions on Palliative-ness Score
+  methodology and feature residualization approach
+- Supported outcome characterization of the 1,217
+  silent candidates
+- Active team member throughout all datathon sessions
+
+---
+
+## 👥 Full Team
+
+**Event:** Mayo Clinic Datathon 2026 · Jacksonville, FL · April 2026
 
 **Mentors:**
 Ahram Han (MIT Visiting Researcher) ·
@@ -99,7 +114,8 @@ Marta E. Berguido · Elizabeth Carey · Ross Reichard
 
 | Layer | Technology |
 |---|---|
-| Data Source | MIMIC-IV v3.1 (PhysioNet) |
+| Primary Data | MIMIC-IV v3.1 · PhysioNet Credentialed Access |
+| Secondary Data | eICU-CRD · PhysioNet Credentialed Access |
 | Cohort Engine | Google BigQuery |
 | Feature Engine | DuckDB |
 | Language | Python 3.8 |
@@ -107,5 +123,5 @@ Marta E. Berguido · Elizabeth Carey · Ross Reichard
 
 ---
 
-*All patient data accessed under PhysioNet credentialed 
-access agreement. MIMIC-IV Datathon 2026.*
+*All patient data accessed under PhysioNet credentialed
+access agreement. Mayo Clinic Jacksonville Datathon 2026.*
